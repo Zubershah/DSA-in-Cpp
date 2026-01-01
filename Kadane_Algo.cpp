@@ -62,6 +62,7 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
+        // Kadane's Algorithm
         currentSum += arr[i];
         maxSum = max(currentSum, maxSum);
         if (currentSum < 0)
