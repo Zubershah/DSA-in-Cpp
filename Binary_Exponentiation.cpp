@@ -32,13 +32,13 @@ double power(double a, int n)
         {
             ans *= a;
         }
-        a *= a;   
+        a *= a;
         exp >>= 1; // Deletes the last bit of the exponent and updates
     }
     return ans;
 }
 int main()
 {
-    cout << power(2, 2);
+    cout << power(3, 5);
     return 0;
 }

@@ -23,43 +23,44 @@
 //     vector<int> vec(3, 6);
 //     for (int value : vec) // for each loop
 //     {
-//         cout << value << endl;
+//         cout << value << endl; // Output: 6 6 6
 //     }
 
-//     cout << "size of a vector is " << vec.size() << endl;
+//     cout << "size of a vector is " << vec.size() << endl;         // Output: size of a vector is 3
+//     cout << "capacity of a vector is " << vec.capacity() << endl; // Output: capacity of a vector is 3
 
 //     vec.push_back(23);
 //     for (int value : vec)
 //     {
-//         cout << value << endl;
+//         cout << value << endl; // Output: 6 6 6 23
 //     }
-//     cout << "size of a vector is " << vec.size() << endl;
-//     cout << "capacity of a vector is " << vec.capacity() << endl;
+//     cout << "size of a vector is " << vec.size() << endl;         // Output: size of a vector is 4
+//     cout << "capacity of a vector is " << vec.capacity() << endl; // Output: capacity of a vector is 6
 
 //     vec.pop_back();
 //     for (int value : vec)
 //     {
-//         cout << value << endl;
+//         cout << value << endl; // Output: 6 6 6
 //     }
-//     cout << "size of a vector is " << vec.size() << endl;
-//     cout << "capacity of a vector is " << vec.capacity() << endl;
+//     cout << "size of a vector is " << vec.size() << endl;         // Output: size of a vector is 3
+//     cout << "capacity of a vector is " << vec.capacity() << endl; // Output: capacity of a vector is 6
 
 //     vec.push_back(23);
-//     cout << vec.front() << endl; // print the first vector element
-//     cout << vec.back() << endl;  // print the last vector element
-//     cout << vec.at(2) << endl;   // print the vector element at index 2
-//     cout << "capacity of a vector is " << vec.capacity() << endl;
+//     cout << vec.front() << endl;                                  // print the first vector element Output: 6
+//     cout << vec.back() << endl;                                   // print the last vector element Output: 23
+//     cout << vec.at(2) << endl;                                    // print the vector element at index 2 Output: 6
+//     cout << "capacity of a vector is " << vec.capacity() << endl; // Output: capacity of a vector is 6
 
 //     return 0;
 // }
 
-// /* Linear Search */
+/* Linear Search */
 // #include <iostream>
 // #include <vector>
 // using namespace std;
 // int main()
 // {
-//     vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+//     vector<int> arr = {1, 2, 3, 4, 5, 4, 7, 8, 9, 0};
 //     int target = 9;
 //     for (int check : arr)
 //     {
@@ -73,26 +74,26 @@
 //     return 0;
 // }
 
-// /* Reverse an vector using function */
-// #include <iostream>
-// #include <vector>
-// using namespace std;
-// void func(vector<int> &arr)
-// {
-//     for (int i = 0; i < arr.size() / 2; i++)
-//     {
-//         int temp = arr.at(i);
-//         arr.at(i) = arr.at(arr.size() - i - 1);
-//         arr.at(arr.size() - i - 1) = temp;
-//     }
-// }
-// int main()
-// {
-//     vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
-//     func(arr);
-//     for (int value : arr)
-//     {
-//         cout << value << endl;
-//     }
-//     return 0;
-// }
+/* Reverse an vector using function */
+#include <iostream>
+#include <vector>
+using namespace std;
+void func(vector<int> &arr)
+{
+    for (int i = 0; i < arr.size() / 2; i++)
+    {
+        int temp = arr.at(i);
+        arr.at(i) = arr.at(arr.size() - i - 1);
+        arr.at(arr.size() - i - 1) = temp;
+    }
+}
+int main()
+{
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+    func(arr);
+    for (int value : arr)
+    {
+        cout << value << endl;
+    }
+    return 0;
+}

@@ -1,4 +1,4 @@
-// // Brute force approach
+/* Brute force approach */
 // #include <iostream>
 // #include <vector>
 // using namespace std;
@@ -30,7 +30,7 @@
 //     return 0;
 // }
 
-// optimize approach
+/* optimize approach */
 // #include <iostream>
 // #include <vector>
 // #include <algorithm>
@@ -38,11 +38,13 @@
 // int main()
 // {
 //     vector<int> vec = {1, 3, 5, 4, 4, 4, 5, 5, 5, 5, 2, 5, 3, 5, 5};
-//     sort(vec.begin(), vec.end());
-//     // 1 2 2 3 3 4 4 5 5 5 5 5 5 5 5
-//     //                             ^
-//     //                             |
-//     //                             |
+//     sort(vec.begin(), vec.end()); //Output: 1 2 2 3 3 4 4 5 5 5 5 5 5 5 5
+/*
+1 2 2 3 3 4 4 5 5 5 5 5 5 5 5
+                            ^
+                            |
+                            |
+*/
 //     int count = 1;
 //     int Ans=0;
 //     for (int i = 1; i < vec.size(); i++)
@@ -68,7 +70,7 @@
 //     }
 //     return 0;
 
-// // moore's voting algorithm
+/* moore's voting algorithm */
 // #include <iostream>
 // #include <vector>
 // using namespace std;
@@ -99,7 +101,7 @@
 //     return 0;
 // }
 
-// moore's voting algorithm if majority is not there
+/* moore's voting algorithm if majority is not there */
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -142,7 +142,6 @@
 
 // #include <iostream>
 // using namespace std;
-
 // int main()
 // {
 //     /* Check n is power of 2 */
@@ -161,7 +160,6 @@
 //     {
 //         cout << n << " is not the power of 2" << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -234,7 +232,7 @@
 // int main()
 // {
 //     int arr[] = {4, 32, 2, 8, 145, 43};
-//     int target = 4;
+//     int target = 145;
 //     int value = function(arr, target);
 //     cout << value;
 //     return 0;
@@ -260,7 +258,7 @@
 //     return 0;
 // }
 
-// /* Write a function to print intersection of 2 array*/
+/* Write a function to print intersection of 2 array*/
 // #include <iostream>
 // #include <limits.h>
 // using namespace std;
@@ -273,14 +271,15 @@
 //             if (arr[i] == arr1[k])
 //             {
 //                 cout << arr[i] << endl;
+//                 break;
 //             }
 //         }
 //     }
 // }
 // int main()
 // {
-//     int arr[] = {21, -2, 321, 1, -23, 17};
-//     int arr1[] = {1, 32, 76, 8, 17};
+//     int arr[] = {21, -2, 21, 1, -23, 17};
+//     int arr1[] = {1, 32, 17, 8, 76};
 //     func(arr, arr1);
 //     return 0;
 // }

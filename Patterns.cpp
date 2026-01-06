@@ -19,7 +19,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -42,7 +41,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -67,7 +65,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -91,7 +88,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -104,7 +100,7 @@
 //     DEF
 //     GHI
 //     */
-//     int n = 6;
+//     int n = 3;
 //     char ch = 'A';
 //     for (int i = 0; i < n; i++)
 //     {
@@ -115,7 +111,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -142,7 +137,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -165,7 +159,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -190,7 +183,6 @@
 //         ch++;
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -213,7 +205,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -240,7 +231,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -265,7 +255,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -292,7 +281,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -317,7 +305,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -334,7 +321,6 @@
 //     ___4
 
 //     _ ---> spaces
-
 //     */
 //     int n = 4;
 //     for (int i = 0; i < n; i++)
@@ -349,7 +335,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -364,7 +349,6 @@
 //     ___D
 
 //     _ ---> spaces
-
 //     */
 //     int n = 4;
 //     char ch = 'A';
@@ -381,7 +365,6 @@
 //         cout << endl;
 //         ch++;
 //     }
-
 //     return 0;
 // }
 
@@ -398,7 +381,6 @@
 //     1234321
 
 //     _ ---> spaces
-
 //     */
 //     int n = 4;
 //     for (int i = 1; i <= n; i++)
@@ -417,7 +399,6 @@
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -450,9 +431,9 @@
 //             cout << " ";
 //         }
 //         cout << "*";
-//         if (i != 1)
+//         if (i != 1) // inner spaces
 //         {
-//             for (int k = 0; k < 2 * i - 3; k++) // inner spaces
+//             for (int k = 0; k < 2 * i - 3; k++)
 //             {
 //                 cout << " ";
 //             }
@@ -471,18 +452,16 @@
 //             cout << " ";
 //         }
 //         cout << "*";
-//         if (i != n - 1)
+//         if (i != n - 1) // inner spaces
 //         {
-//             for (int k = 1; k <= 2 * (n - i) - 3; k++) // inner spaces
+//             for (int k = 1; k <= 2 * (n - i) - 3; k++)
 //             {
 //                 cout << " ";
 //             }
-
 //             cout << "*";
 //         }
 //         cout << endl;
 //     }
-
 //     return 0;
 // }
 
@@ -505,19 +484,16 @@ int main()
     // **    **     4 space between stars
     // ***  ***     2 space between stars
     // ********
-    int n = 4;
+    int n = 10;
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= i; j++)
         {
             cout << "*";
         }
-        if (i != n)
+        for (int k = 1; k <= 2 * (n - i); k++)
         {
-            for (int k = 1; k <= 2 * (n - i); k++)
-            {
-                cout << " ";
-            }
+            cout << " ";
         }
         for (int l = 1; l <= i; l++)
         {
@@ -535,12 +511,9 @@ int main()
         {
             cout << "*";
         }
-        if (i != n)
+        for (int k = 1; k <= 2 * i; k++)
         {
-            for (int k = 1; k <= 2 * i; k++)
-            {
-                cout << " ";
-            }
+            cout << " ";
         }
         for (int l = 1; l <= n - i; l++)
         {
@@ -548,6 +521,5 @@ int main()
         }
         cout << endl;
     }
-
     return 0;
 }

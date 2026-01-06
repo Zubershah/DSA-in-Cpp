@@ -35,7 +35,7 @@
 //     return 0;
 // }
 
-// Optimal 2 point approach
+/* Optimal 2 point approach */
 #include <iostream>
 #include <vector>
 using namespace std;

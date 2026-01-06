@@ -3,7 +3,7 @@
 // int main()
 // {
 //     /*
-//     Basics of subarray
+//     To print the subarray
 //     n ( n + 1 )
 //     -----------
 //          2
@@ -31,9 +31,9 @@
 // int main()
 // {
 //     /* maximum of subarray sum ---> Brute force approach */
-//     int n = 3;
-//     int arr[3] = {10, -5, 2};
-//     int maxsum = INT_MIN;
+//     int n = 5;
+//     int arr[5] = {10, -5, 2, -10, 30};
+//     int maxsum = 0;
 //     for (int st = 0; st < n; st++)
 //     {
 //         int sum = 0;
@@ -54,22 +54,22 @@
 using namespace std;
 int main()
 {
-    int n = 3;
-    int arr[3] = {10, -5, 2};
+    int n = 5;
+    int arr[5] = {10, -5, 2, -10, 30};
 
-    int maxSum = INT_MIN;
-    int currentSum = 0;
+    int maxsum = 0;
+    int sum = 0;
 
     for (int i = 0; i < n; i++)
     {
         // Kadane's Algorithm
-        currentSum += arr[i];
-        maxSum = max(currentSum, maxSum);
-        if (currentSum < 0)
+        sum += arr[i];
+        maxsum = max(sum, maxsum);
+        if (sum < 0)
         {
-            currentSum = 0;
+            sum = 0;
         }
     }
-    cout << maxSum << endl;
+    cout << maxsum << endl;
     return 0;
 }
